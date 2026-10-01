@@ -1,0 +1,34 @@
+{
+  "name": "i-am-omani",
+  "version": "2.1.0",
+  "description": "I Am Omani - realtime Omani multiplayer games and live knowledge challenges",
+  "main": "baloot-bootstrap.js",
+  "scripts": {
+    "start": "node baloot-bootstrap.js",
+    "dev": "nodemon baloot-bootstrap.js",
+    "check": "node --check server.js && node --check baloot-server.js && node --check baloot-bootstrap.js"
+  },
+  "engines": {
+    "node": ">=20 <23"
+  },
+  "keywords": [
+    "oman",
+    "quiz",
+    "baloot",
+    "cards",
+    "realtime",
+    "socket.io",
+    "pwa",
+    "multiplayer"
+  ],
+  "author": "turkik69",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "firebase-admin": "^13.10.0",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
