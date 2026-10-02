@@ -1,36 +1,17 @@
-/* Exact visual reference skin — uses the four approved reference images directly. */
-:root{--ref-panel:rgba(14,16,68,.88);--ref-border:rgba(135,83,255,.8);--ref-gold:#ffc85c;--ref-cyan:#25d9ff;--ref-pink:#ff46c7}
+/* Approved reference-image skin — first proof on the home screen. */
+:root{--ref-panel:rgba(14,16,68,.88);--ref-border:rgba(135,83,255,.8);--ref-gold:#ffc85c;--ref-cyan:#25d9ff;--ref-pink:#ff46c7;--home-ref:none}
 body.reference-skin{background:#060822!important}
-.reference-skin .screen{background-color:#070922!important;background-repeat:no-repeat!important;background-position:center top!important;background-size:cover!important;min-height:calc(100svh - 78px)!important;isolation:isolate}
-.reference-skin .screen::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(3,5,24,.10),rgba(3,5,24,.22) 42%,rgba(3,5,24,.78) 82%,#050718 100%);pointer-events:none}
-.reference-skin #homeScreen,.reference-skin #hostCreateScreen{background-image:url('/assets/ref-create.jpg?v=ref1')!important}
-.reference-skin #joinScreen,.reference-skin #playerLobbyScreen{background-image:url('/assets/ref-join.jpg?v=ref1')!important}
-.reference-skin #questionScreen,.reference-skin #displayScreen{background-image:url('/assets/ref-question.jpg?v=ref1')!important}
-.reference-skin #resultScreen,.reference-skin #finalScreen{background-image:url('/assets/ref-results.jpg?v=ref1')!important}
-.reference-skin #displayJoinScreen,.reference-skin #hostLobbyScreen{background-image:url('/assets/ref-create.jpg?v=ref1')!important}
-.reference-skin .oman-art,.reference-skin .floating-trophy{display:none!important}
-.reference-skin .hero{min-height:690px!important;justify-content:flex-end!important;padding:26px 18px 58px!important;background:linear-gradient(180deg,transparent 0 52%,rgba(5,7,29,.38) 74%,rgba(5,7,29,.88) 100%)!important}
-.reference-skin .hero .eyebrow{background:rgba(16,18,72,.84)!important;border:1px solid rgba(255,201,91,.66)!important;color:#ffe4a1!important;box-shadow:0 0 28px rgba(255,183,67,.28)!important}
+.reference-skin .screen{background-color:#070922!important;min-height:calc(100svh - 78px)!important;isolation:isolate}
+.reference-skin #homeScreen{background-image:var(--home-ref)!important;background-repeat:no-repeat!important;background-position:center top!important;background-size:cover!important}
+.reference-skin #homeScreen::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(3,5,24,.02),rgba(3,5,24,.08) 45%,rgba(3,5,24,.62) 72%,#050718 100%);pointer-events:none}
+.reference-skin #homeScreen .oman-art,.reference-skin #homeScreen .floating-trophy{display:none!important}
+.reference-skin .hero{min-height:690px!important;justify-content:flex-end!important;padding:26px 18px 58px!important;background:linear-gradient(180deg,transparent 0 50%,rgba(5,7,29,.18) 70%,rgba(5,7,29,.74) 100%)!important}
+.reference-skin .hero .eyebrow{background:rgba(16,18,72,.80)!important;border:1px solid rgba(255,201,91,.70)!important;color:#ffe4a1!important;box-shadow:0 0 28px rgba(255,183,67,.30)!important}
 .reference-skin .hero h1{font-size:clamp(58px,16vw,104px)!important;text-shadow:0 0 28px rgba(100,67,255,.45)!important}
 .reference-skin .hero p{font-size:18px!important;color:#fff!important;text-shadow:0 3px 18px #000!important;max-width:760px!important}
-.reference-skin .hero-stats>div{background:rgba(10,14,61,.80)!important;border:1px solid rgba(109,75,255,.72)!important;box-shadow:0 0 22px rgba(72,54,255,.18)!important}
+.reference-skin .hero-stats>div{background:rgba(10,14,61,.78)!important;border:1px solid rgba(109,75,255,.72)!important;box-shadow:0 0 22px rgba(72,54,255,.18)!important}
 .reference-skin .mode-grid{position:relative;z-index:3;grid-template-columns:repeat(3,1fr)!important;gap:18px!important;padding:0 24px 76px!important;margin-top:-8px!important}
 .reference-skin .mode-card{min-height:180px!important;padding:28px!important;background:linear-gradient(145deg,rgba(22,22,93,.91),rgba(40,15,88,.9))!important;border:1px solid var(--ref-border)!important;box-shadow:0 24px 58px rgba(0,0,0,.46),0 0 30px rgba(103,55,255,.18)!important;backdrop-filter:blur(12px)!important}
 .reference-skin .mode-card strong{font-size:26px!important}.reference-skin .mode-card small{color:#e5e8ff!important}.reference-skin .mode-icon{display:none!important}
-.reference-skin .panel,.reference-skin .question-card,.reference-skin .result-hero,.reference-skin .final-wrap,.reference-skin .display-stage{background:linear-gradient(145deg,rgba(17,20,79,.90),rgba(34,14,78,.90))!important;border:1px solid rgba(129,78,255,.80)!important;box-shadow:0 28px 70px rgba(0,0,0,.50),0 0 34px rgba(105,58,255,.17)!important;backdrop-filter:blur(14px)!important}
-.reference-skin .primary-btn{background:linear-gradient(90deg,#552cff,#ff35c3 56%,#1dc8ff)!important;border:0!important;box-shadow:0 0 30px rgba(162,54,255,.30)!important}
-.reference-skin input,.reference-skin select,.reference-skin textarea{background:rgba(9,14,62,.80)!important;border:1px solid rgba(85,173,255,.48)!important;color:#fff!important}
-.reference-skin .answer-btn{background:linear-gradient(145deg,rgba(19,31,104,.95),rgba(68,17,130,.93))!important;border:1px solid rgba(122,83,255,.78)!important;box-shadow:0 10px 28px rgba(0,0,0,.30)!important}
-.reference-skin .question-card h2{background:linear-gradient(90deg,#fff 0 24%,#39dfff 47%,#ff4bc6 82%);-webkit-background-clip:text;background-clip:text;color:transparent!important}
 .reference-skin .topbar{background:rgba(4,6,28,.91)!important;border-bottom:1px solid rgba(255,197,88,.40)!important;backdrop-filter:blur(18px)!important}
-@media(max-width:760px){
- .reference-skin .screen{background-size:auto 100%!important;background-position:center top!important}
- .reference-skin #homeScreen,.reference-skin #hostCreateScreen{background-position:52% top!important}
- .reference-skin #joinScreen,.reference-skin #playerLobbyScreen{background-position:54% top!important}
- .reference-skin #questionScreen,.reference-skin #displayScreen{background-position:48% top!important}
- .reference-skin #resultScreen,.reference-skin #finalScreen{background-position:51% top!important}
- .reference-skin .hero{min-height:590px!important;padding:20px 18px 44px!important}
- .reference-skin .hero h1{font-size:62px!important}.reference-skin .hero p{font-size:16px!important;line-height:1.8!important}
- .reference-skin .mode-grid{grid-template-columns:1fr!important;padding:0 18px 64px!important;gap:16px!important}.reference-skin .mode-card{min-height:136px!important;padding:22px!important}
- .reference-skin .panel{margin-inline:14px!important}
-}
+@media(max-width:760px){.reference-skin #homeScreen{background-size:100% auto!important;background-position:center top!important}.reference-skin .hero{min-height:620px!important;padding:20px 18px 42px!important}.reference-skin .hero h1{font-size:62px!important}.reference-skin .hero p{font-size:16px!important;line-height:1.8!important}.reference-skin .mode-grid{grid-template-columns:1fr!important;padding:0 18px 64px!important;gap:16px!important}.reference-skin .mode-card{min-height:136px!important;padding:22px!important}}
